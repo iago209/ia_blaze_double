@@ -14,7 +14,7 @@ sessao = requests.Session()
 
 ## Função para obter todos os "rolls" disponíveis na API
 def obter_rolls_disponiveis():
-    url = 'https://blaze.com/api/roulette_games/recent'
+    url = 'https://blaze1.space/api/roulette_games/recent'
     response = sessao.get(url, timeout=10)  # Define um tempo limite de 10 segundos para a solicitação
     if response.status_code == 200:
         dados = response.json()
